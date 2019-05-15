@@ -79,105 +79,73 @@
 ## Requisitos Funcionais
 
 ### RF 01
+O sistema gerencia cadastro e informações dos livros, de usuários e moderadores.
+    
+    + Informações do Livro:
 
-O sistema gerencia cadastro e informações dos livros e de 3 tipos de usuário: Aluno(a), Professor(a) e Bibliotecário(a).
+        * Informações do sistema quanto a livros:
 
-+ Informações do Livro:
+  	        1. Título;
+  	        2. Autor;
+  	        3. Aquisição;
+  	        4. Observações;
+  	        5. Volume;
+  	        6. Edição;
+  	        7. Editora;
+  	        8. Exemplares;
+  	        9. Classificação;
 
-		* As informações guardadas no sistema, sobre o(a) Livro são:
 
-			1. Título;
-			2. Autor;
-			3. Aquisição;
-			4. Observações;
-			5. Volume;
-			6. Edição;
-			7. Editora;
-			8. Exemplares;
-			9. Classificação;
+    + Informações do Usuário:
 
-+ Informações do(a) Aluno(a):
+        * Informações do sistema quanto a usuários:
 
-		* As informações guardadas no sistema, sobre o(a) aluno(a), são:
+  	        1. Nome;
+  	        2. Telefone;
+  	        3. E-mail;   
+  	        4. Senha;
 
-			1. Matrícula;
-			2. Nome;
-			3. Telefone;   
-			4. Turma;
-			5. E-mail;
-			6. Senha.
+    + Informações do sistema quanto ao moderador:
 
-+ Informações do(a) Professor(a):
+        * Inf
 
-		* As informações guardadas no sistema, sobre o(a) professor(a) são:
-
-			1. Matrícula;
-			2. Nome;
-			3. Telefone;
-			4. E-mail;
-			5. Senha.
-
-+ Informações do(a) Bibliotecário(a):
-
-		* As informações guardadas no sistema, sobre o(a) bibliotecário(a) são:
-
-			1. Matricula;
-			2. Nome;
-			3. Telefone;
-			4. E-mail;
-			5. Senha.
-
+  	        1. CPF;
+  	        2. Nome;
+  	        3. Telefone;
+	        4. Estado;
+	        5. Endereço;
+  	        6. E-mail;
+  	        7. Senha.
 
 ### RF 02
-
-- Todas as informações dos(as) Usuários(as) e dos Livros são guardadas em um banco de dados.
++ Todas as informações do Usuário e dos Livros são guardadas em um banco de dados.
 
 ### RF 03
-
-- O(a) Bibliotecário(a) tem acesso a várias informações, para visualização, de todos os usuários, menos à senha.
++ O Moderador tem acesso a várias informações, para visualização, de todos os usuários, menos à senha.
 
 ### RF 04
-
-- Os(as) Alunos(as) e Professores(as) terão acesso somente a suas respectivas informações informando e-mail e senha;
++ O Usuário terá acesso somente a suas respectivas informações informando e-mail e senha;
 
 ### RF 05
-
-- O(a) Bibliotecário(a) poderá ter acesso ao sistema informando e-mail e senha.
++ O Moderador poderá ter acesso ao sistema informando e-mail e senha. 
 
 ### RF 06
++ Livros
 
-Livros
-
-- O(a) Biblioracário(a) gerencia os livros contidos na biblioteca: catalogando-os, emprestando-os ou excluindo-os dos registros.
-
-+ O(a) Biliotecário(a) cadastra os livros da biblioteca e as informações são armazenadas em um banco de dados.
+    * O Moderador gerencia os livros contidos na biblioteca: catalogando-os, emprestando-os ou excluindo-os dos registros.
+    * O Moderador cadastra os livros da biblioteca e as informações são armazenadas em um banco de dados.
 
 ### RF 07
-
-- Os livros, após cadastrados no sistema, possuirão suas informações parcialmente disponibilizadas aos(às) Alunos(as) e Professores(as).
-
++ Os livros, após cadastrados no sistema, possuirão suas informações parcialmente disponibilizadas aos Usuários.
+ 
 ### RF 08
-
-- Os(as) Alunos(as) ou o(a) Professores(as) poderão reservar até 2 livros no site. Após reservado(s), a pessoa terá prazo no máximo 24H úteis para retirar o livro na biblioteca, que ficará indisponível. Caso isso não venha a acontecer, a reserva será cancelada e o livro voltará a estar disponível.
++ Os dados do usuário serão coletados pelo algoritmo para uma melhor experiência com a biblioteca.
 
 ### RF 09
-
-- Os(as) Alunos(as) ou o(a) Professores(as) poderão colocar até 2 livros na lista de desejo (caso estejam emprestados). E ao fazer isso, serão notificadas quando o livro estiver disponível;
-
-* Esta lista estará disponível apenas ao(à) Aluno(a) ou o(a) Professores(as).
++ Os livros serão divididos em categorias e subcategorias.
 
 ### RF 10
-
-- Alunos(as) e Professores(as) colocados(as) na Lista De Suspenção (por terem furtado algum livro ou terem causado alguma outra perturbação que venha a prejudicar o(s) livro(s) da biblioteca) serão impedidos(as) de acessar o sistema até serem retirados(as) da lista.
++ O algoritmo fará recomendações por conteúdo baseada em leituras passadas.
 
 ### RF 11
-
-- O sistema enviará um e-mail aos(às) Alunos(as) e Professores(as) quando um livro de interesse for disponibilidado.
-
-### RF 12
-
-- Caso a data de entrega esteja próxima de chegar, será enviado um e-mail para lembrá-lo(a) da devolução do livro.
-
-### RF 13
-
-- O sistema tem uma ferramenta que possibilita os(as) Alunos(as) e Professores(as) pedir recomendações de leitura aleatoriamente.
++ Os livros mais lidos serão colocados em uma lista nomeada "Em alta", que aparecerá para todos os usuários.
